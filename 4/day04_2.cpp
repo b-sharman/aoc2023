@@ -25,8 +25,7 @@ int main() {
             cin>>x;
             wn.push_back(x);
         }
-        // discard the |
-        cin>>throwaway;
+        cin>>throwaway; // discard the |
         for (size_t j=0; j<NUM_YH; j++) {
             cin>>x;
             yh.push_back(x);
@@ -37,7 +36,6 @@ int main() {
             for (const auto& yhe : yh) {
                 if (yhe == wne) {
                     c++;
-                    // cout << yhe << " matches " << wne << endl;
                 }
             }
         }
